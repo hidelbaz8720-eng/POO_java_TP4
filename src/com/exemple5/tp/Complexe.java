@@ -28,13 +28,15 @@ public class Complexe {
     }
 
     // Affichage du nombre complexe
-    @Override
-    public String toString() {
-        if (imaginaire < 0) {
-            return reel + " " + imaginaire + "i";
-        }
-        return reel + " +" + imaginaire + "i";
+
+@Override
+public String toString() {
+    if (imaginaire < 0) {
+        return reel + " - " + Math.abs(imaginaire) + "i";
     }
+    return reel + " + " + imaginaire + "i";
+}
+
 }
 
 
