@@ -15,6 +15,14 @@ public class Article {
 		this.designation = designation;
 		this.categorie = categorie;
 	}
+	@Override
+    public String toString() {
+        return "Article [id=" + id
+            + ", code=" + code
+            + ", designation='" + designation + '\''
+            + ", categorie=" + categorie
+            + "]";
+    }
 	public int getCode() {
 		return code;
 	}
